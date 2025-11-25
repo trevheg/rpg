@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Trevor Hegstrom">
+    <meta name="description" content="A page to create your own character">
+
+    <meta property="og:title" content="D&D Free Rules Reference">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Contains tools and references for D&D">
+    <meta property="og:image" content="https://trevheg.github.io/wdd231/finalproject/images/ddgamepic.webp">
+    <meta property="og:url" content="https://trevheg.github.io/wdd231/finalproject/index.html">
+
+    <title>Character Creator | D&D Free Rules Reference</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script type="module" src="scripts/character-creator.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="above-nav">
+            <h2>D&D Free Rules Reference</h2>
+            <button id="menu-button"></button>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li class="current-page"><a href="index.html">Main</a></li>
+                <li><a href="spells.html">Spells</a></li>
+                <li><a href="monsters.html">Monsters</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Character Creator</h1>
+        <form action="your-character.html">
+            <label for="characterName">Character name:</label>
+            <input type="text" name="characterName" id="characterName" placeholder="Write your character's name" required>
+            <label for="race">Characer Race:</label>
+            <select name="race" id="race" required>
+                <option value="" selected>Select your race</option>
+            </select>
+            <label for="class">Characer Class:</label>
+            <select name="class" id="class" required>
+                <option value="" selected>Select your class</option>
+            </select>
+
+
+            <input type="submit" value="Make your character!" name="submit" id="submit">
+        </form>
+    </main>
+    <footer>    
+        <p>&#169; <span id="currentYear"></span> Trevor Hegstrom, USA</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p>Dungeons & Dragons, D&D Beyond, D&D, Wizards of the Coast, the dragon ampersand, and all other Wizards of the Coast product names, campaign settings, their respective logos, and The World's Greatest Roleplaying Game are © and trademark Wizards of the Coast in the U.S.A. and other countries. © 2025 Wizards.</p>
+        <p><a href="https://youtu.be/57yhDpO3Cls">Link to Video Demonstration</a></p>
+    </footer>
+    
+</body>
+</html>

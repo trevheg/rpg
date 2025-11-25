@@ -1,0 +1,100 @@
+{
+    "monsters": [
+        {
+            "name": "Giant Fire Beetle",
+            "description": "A giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle's glands continue to shed light for 1d6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.",
+            "large-image": "images/giant-fire-beetle-large.webp",
+            "small-image": "images/giant-fire-beetle-small.webp"
+        },
+        {
+            "name": "Kobold",
+            "description": "Kobolds are craven reptilian humanoids that commonly infest dungeons. They make up for their physical ineptitude with a cleverness for trap making.",
+            "large-image": "images/kobold-large.webp",
+            "small-image": "images/kobold-small.webp"
+        },
+        {
+            "name": "Goblin",
+            "description": "Goblins are small, black-hearted humanoids that lair in despoiled dungeons and other dismal settings. Individually weak, they gather in large numbers to torment other creatures.",
+            "large-image": "images/goblin-large.webp",
+            "small-image": "images/goblin-small.webp"
+        },
+        {
+            "name": "Cockatrice",
+            "description": "The cockatrice looks like a hideous hybrid of lizard, bird, and bat. It is infamous for its ability to turn flesh to stone.",
+            "large-image": "images/cockatrice-large.webp",
+            "small-image": "images/cockatrice-small.webp"
+        },
+        {
+            "name": "Animated Armor",
+            "description": "This suit of magically animated plate armor clamors as it moves, banging and grinding like the vengeful spirit of a fallen knight.",
+            "large-image": "images/animated-armor-large.webp",
+            "small-image": "images/animated-armor-small.webp"
+        },
+        {
+            "name": "Ankheg",
+            "description": "Ankheg is a large monstrosity that can burrow and spit acid. It has a bite attack that can grapple its target and a rechargeable acid spray.",
+            "large-image": "images/ankheg-large.webp",
+            "small-image": "images/ankheg-small.webp"
+        },
+        {
+            "name": "Basilisk",
+            "description": "A basilisk is a multilegged, reptilian horror whose deadly gaze transforms victims into porous stone. With its strong jaws, the creature consumes this stone, which returns to organic form in its gullet.",
+            "large-image": "images/basilisk-large.webp",
+            "small-image": "images/basilisk-small.webp"
+        },
+        {
+            "name": "Banshee",
+            "description": "The woeful banshee is a spiteful creature formed from the spirit of a female elf. Its face is wreathed in a wild tangle of hair, its body clad in wispy rags that flutter and stream around it.",
+            "large-image": "images/banshee-large.webp",
+            "small-image": "images/banshee-small.webp"
+        },
+        {
+            "name": "Air Elemental",
+            "description": "An air elemental is a funneling cloud of whirling air with a vague semblance of a face. It can turn itself into a screaming cyclone, creating a whirlwind that batters creatures even as it flings them away.",
+            "large-image": "images/air-elemental-large.webp",
+            "small-image": "images/air-elemental-small.webp"
+        },
+        {
+            "name": "Chimera",
+            "description": "A chimera is a vile combination of goat, lion, and dragon, and features the heads of all three of those creatures. It likes to swoop down from the sky and engulf prey with its fiery breath before landing to attack.",
+            "large-image": "images/chimera-large.webp",
+            "small-image": "images/chimera-small.webp"
+        },
+        {
+            "name": "Frost Giant",
+            "description": "Frost giants are creatures of ice and snow, with hair and beards of pale white or light blue, and flesh as blue as glacial ice. They respect only brute strength and skill in battle.",
+            "large-image": "images/frost-giant-large.webp",
+            "small-image": "images/frost-giant-small.webp"
+        },
+        {
+            "name": "Hydra",
+            "description": "The hydra is a reptilian horror with a crocodilian body and multiple heads on long, serpentine necks. Although its heads can be severed, the hydra magically regrows them in short order.",
+            "large-image": "images/hydra-large.webp",
+            "small-image": "images/hydra-small.webp"
+        },
+        {
+            "name": "Stone Golem",
+            "description": "Stone golems are magical constructs cut and chiseled from stone to appear as tall, impressive statues. Like other golems, they are nearly impervious to spells and ordinary weapons.",
+            "large-image": "images/stone-golem-large.webp",
+            "small-image": "images/stone-golem-small.webp"
+        },
+        {
+            "name": "Green Dragon",
+            "description": "The most cunning and treacherous of true dragons, green dragons use misdirection and trickery to get the upper hand against their enemies. A green dragon is recognized by the crest that begins near its eyes and continues down its spine, reaching full height just behind the skull.",
+            "large-image": "images/green-dragon-large.webp",
+            "small-image": "images/green-dragon-small.webp"
+        },
+        {
+            "name": "Troll",
+            "description": "Fearsome green-skinned giants, trolls eat anything they can catch and devour. Only acid and fire can arrest the regenerative properties of a troll’s flesh.",
+            "large-image": "images/troll-large.webp",
+            "small-image": "images/troll-small.webp"
+        },
+        {
+            "name": "Werewolf",
+            "description": "A werewolf is a savage predator that can appear as a humanoid, as a wolf, or in a terrifying hybrid form—a furred and well-muscled humanoid body topped by a ravening wolf’s head.",
+            "large-image": "images/werewolf-large.webp",
+            "small-image": "images/werewolf-small.webp"
+        }
+    ]
+}
