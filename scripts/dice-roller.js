@@ -13,7 +13,7 @@ const rolls = document.getElementById("rolls");
 const addDice = document.getElementById("addDice");
 const subtractDice = document.getElementById("subtractDice");
 
-// This array has all the dice and their quantities that the user is going to roll
+// This array has all the dice and their quantities that the user is going to roll. The key is the number of sides of each die, and the value is how many times the die is rolled. 
 const dice = {
     4: 0,
     6: 0,
@@ -24,7 +24,7 @@ const dice = {
     100: 0
 }
 
-// Adds event listeners for all the dice buttons
+// Event listeners for all the dice buttons
 d4.addEventListener("click", () => {   
     addDie(4);
 });
@@ -48,15 +48,16 @@ d100.addEventListener("click", () => {
 });
 
 function addDie(die) { // adds or subtracts dice from the dice object, ie dice the user will roll
-
-    if (addDice.checked) { // checks whether "add" or "subtract" is checked and adds and subtracts dice accordingly
+    // checks whether "add" or "subtract" is checked and adds and subtracts dice accordingly
+    if (addDice.checked) { 
         dice[die]++;
     } else if (subtractDice.checked) {
         dice[die]--;
     }
 
+    // shows what dice the user has selected
     chosenDice.textContent = "";
-    for (const [die, rolls] of Object.entries(dice)) { // shows what dice the user has selected
+    for (const [die, rolls] of Object.entries(dice)) { 
         if (rolls > 0) {
             if (chosenDice.textContent.length > 0) {
                 chosenDice.textContent += " + ";
@@ -70,16 +71,18 @@ function addDie(die) { // adds or subtracts dice from the dice object, ie dice t
         }
     }
 
-    if (modifier.value != 0) {  // adds a + for modifier only if there is text in the modifier box
+    // adds a + for modifier only if there is text in the modifier box
+    if (modifier.value != 0) {
         chosenDice.textContent += " +"
     }
 
 }
 
-roll.addEventListener("click", () => { // rolls the user's selected dice
+// rolls the user's selected dice
+roll.addEventListener("click", () => { 
     let total = 0;
-    let myRolls = "";
-    // modifier.value = 0;
+    let myRolls = ""; // Text showing the individual dice rolled, the modifier, and the total
+
     for (const [die, rolls] of Object.entries(dice)) {
         
         for (let i = 0; i < Math.abs(rolls); i++) {
@@ -124,3 +127,4 @@ roll.addEventListener("click", () => { // rolls the user's selected dice
 //  halfling luck
 // Put dice in a loop so if I add new dice buttons to the html they are automatically added to the JS
 // find a way to have the same dice adding and subtracting (eg 1D4 - 1D4)
+// add to website
