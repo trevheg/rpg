@@ -13,14 +13,25 @@
     <input type="radio" id="addDice" name="addSubtract" value="Add" checked>
     <label for="subtractDice" >Subtract</label>
     <input type="radio" id="subtractDice" name="addSubtract" value="Subtract">
-    <div id=""></div>
-    <button class="dieButton" id="d4">D4</button>
-    <button class="dieButton" id="d6">D6</button>
-    <button class="dieButton" id="d8">D8</button>
-    <button class="dieButton" id="d10">D10</button>
-    <button class="dieButton" id="d12">D12</button>
-    <button class="dieButton" id="d20">D20</button>
-    <button class="dieButton" id="d100">D100</button>
+    <div id="dieButtons">
+        <button class="dieButton" id="d4" value="4">+ D4</button>
+        <button class="dieButton" id="d6" value="6">+ D6</button>
+        <button class="dieButton" id="d8" value="8">+ D8</button>
+        <button class="dieButton" id="d10" value="10">+ D10</button>
+        <button class="dieButton" id="d12" value="12">+ D12</button>
+        <button class="dieButton" id="d20" value="20">+ D20</button>
+        <button class="dieButton" id="d100" value="100">+ D100</button>
+        <button class="dieButton" id="md4" value="-4">- D4</button>
+    </div>
+    <div id="subtractButtons">
+        <button class="dieButton" id="d4">- D4</button>
+        <button class="dieButton" id="d6">- D6</button>
+        <button class="dieButton" id="d8">- D8</button>
+        <button class="dieButton" id="d10">- D10</button>
+        <button class="dieButton" id="d12">- D12</button>
+        <button class="dieButton" id="d20">- D20</button>
+        <button class="dieButton" id="d100">- D100</button>
+    </div>
     <h2 id="chosenDice"></h2>
     
     <label for="modifier" id="modifierLabel">Modifier:</label>

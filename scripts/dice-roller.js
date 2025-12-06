@@ -1,10 +1,11 @@
-const d4 = document.getElementById("d4");
-const d6 = document.getElementById("d6");
-const d8 = document.getElementById("d8");
-const d10 = document.getElementById("d10");
-const d12 = document.getElementById("d12");
-const d20 = document.getElementById("d20");
-const d100 = document.getElementById("d100");
+// const d4 = document.getElementById("d4");
+// const d6 = document.getElementById("d6");
+// const d8 = document.getElementById("d8");
+// const d10 = document.getElementById("d10");
+// const d12 = document.getElementById("d12");
+// const d20 = document.getElementById("d20");
+// const d100 = document.getElementById("d100");
+const dieButtons = document.querySelector("#dieButtons");
 const chosenDice = document.getElementById("chosenDice");
 const modifier = document.getElementById("modifier");
 const roll = document.getElementById("roll");
@@ -25,27 +26,37 @@ const dice = {
 }
 
 // Event listeners for all the dice buttons
-d4.addEventListener("click", () => {   
-    addDie(4);
-});
-d6.addEventListener("click", () => {   
-    addDie(6);
-});
-d8.addEventListener("click", () => {   
-    addDie(8);
-});
-d10.addEventListener("click", () => {   
-    addDie(10);
-});
-d12.addEventListener("click", () => {   
-    addDie(12);
-});
-d20.addEventListener("click", () => {   
-    addDie(20);
-});
-d100.addEventListener("click", () => {   
-    addDie(100);
-});
+// d4.addEventListener("click", () => {   
+//     addDie(4);
+// });
+// d6.addEventListener("click", () => {   
+//     addDie(6);
+// });
+// d8.addEventListener("click", () => {   
+//     addDie(8);
+// });
+// d10.addEventListener("click", () => {   
+//     addDie(10);
+// });
+// d12.addEventListener("click", () => {   
+//     addDie(12);
+// });
+// d20.addEventListener("click", () => {   
+//     addDie(20);
+// });
+// d100.addEventListener("click", () => {   
+//     addDie(100);
+// });
+
+// Event listener for the dice buttons
+dieButtons.addEventListener("click", (press) => {
+    // switch (press.target.id) {
+
+    // }
+    // addDie(parseInt(press.getAttribute("data-dieSize")));
+    console.log(press.target.value)
+    addDie(parseInt(press.target.value));
+})
 
 function addDie(die) { // adds or subtracts dice from the dice object, ie dice the user will roll
     // checks whether "add" or "subtract" is checked and adds and subtracts dice accordingly
