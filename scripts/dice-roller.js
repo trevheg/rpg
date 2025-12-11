@@ -14,7 +14,7 @@ dieButtons.forEach(button => {
     dice[button.value] = 0;
 })
 
-console.log(dice)
+// console.log(dice)
 
 // Creates an event listener for each of the buttons 
 // the event listener sends the value of the button, ie the die size, to the addDie function
@@ -35,28 +35,32 @@ function addDie(die) { // adds or subtracts dice from the dice object, ie dice t
         }
     }
         
-    console.log(dice);
+    // console.log(dice);
 
     // shows what dice the user has selected
-    // chosenDice.textContent = "";
-    // for (const [die, rolls] of Object.entries(dice)) { 
-    //     if (rolls > 0) {
-    //         if (chosenDice.textContent.length > 0) {
-    //             chosenDice.textContent += " + ";
-    //         } // adds a + to the entry only if it isn't the first entry
-    //         chosenDice.textContent += `${rolls}D${die}`
-    //     } else if (rolls < 0) {
-    //         if (chosenDice.textContent.length < 0) {
-    //             chosenDice.textContent += " ";
-    //         }
-    //         chosenDice.textContent += `- ${Math.abs(rolls)  }D${die}`
-    //     }
-    // }
+    chosenDice.textContent = "";
+    for (const [die, rolls] of Object.entries(dice)) { 
+        if (rolls > 0 && parseInt(die) > 0) {
+            
+            // adds a + to the entry only if it isn't the first entry
+            if (chosenDice.textContent.length > 0) {
+                chosenDice.textContent += " + ";
+            }
+            chosenDice.textContent += `${rolls}D${die}`
+        } else if (rolls > 0 && parseInt(die) < 0) {
+            
+            // adds a space to the entry only if it isn't the first entry
+            if (chosenDice.textContent.length > 0) {
+                chosenDice.textContent += " ";
+            }
+            chosenDice.textContent += `- ${Math.abs(rolls)  }D${Math.abs(parseInt(die))}`
+        }
+    }
 
-    // // adds a + for modifier only if there is text in the modifier box
-    // if (modifier.value != 0) {
-    //     chosenDice.textContent += " +"
-    // }
+    // adds a + for modifier only if there is text in the modifier box
+    if (modifier.value != 0) {
+        chosenDice.textContent += " +"
+    }
 
 }
 
@@ -68,19 +72,21 @@ roll.addEventListener("click", () => {
     for (const [die, rolls] of Object.entries(dice)) {
         
         for (let i = 0; i < Math.abs(rolls); i++) {
-            let roll = Math.floor(Math.random() * die) + 1;
-            if (rolls > 0) {
+            let roll = Math.floor(Math.random() * Math.abs(die)) + 1;
+            if (rolls > 0 && parseInt(die) > 0) {
                 total += roll;
+                // adds a + to the entry only if it isn't the first entry
                 if (myRolls.length > 0) {                    
                     myRolls += ` + `;
                 }
                 myRolls += `D${die}(${roll})`
-            } else if (rolls < 0) {
-                total -= roll;
+            } else if (rolls > 0 && parseInt(die) < 0) {
+                total += roll;
+                // adds a space to the entry only if it isn't the first entry
                 if (myRolls.length > 0) {                    
-                    myRolls += ` `;
+                    myRolls -= ` `;
                 }
-                myRolls += `- D${die}(${roll})`
+                myRolls += `- D${Math.abs(parseInt(die))}(${Math.abs(roll)})`
             }
         }       
     }
@@ -99,9 +105,9 @@ roll.addEventListener("click", () => {
 })
 
 // To do:
+// fix positive dice showing up as nan when I also roll negative dice
 // fix the dice display to work with the new code
 // make negative dice show up on next line and align with ones above
-// subtracting dice come after adding dice
 // roll history
 // clear entry
 // expandable advanced options menu
