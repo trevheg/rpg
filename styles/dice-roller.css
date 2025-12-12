@@ -12,3 +12,6 @@
     width: 3rem;
 }
 
+#rollHistory :first-child{
+    font-weight: bold;
+}
