@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Roller</title>
-    <link rel="stylesheet" href="styles/dice-roller.css">
+    <meta name="author" content="Trevor Hegstrom">
+    <meta name="description" content="Free dice roller">
+
+    <meta property="og:title" content="D&D Free Rules Reference">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Contains tools and references for D&D">
+    <meta property="og:image" content="https://trevheg.github.io/rpg/images/ddgamepic.webp">
+    <meta property="og:url" content="https://trevheg.github.io/rpg/index.html">
+
+    <title>Dice Roller | D&D Free Rules Reference</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script type="module" src="scripts/character-creator.js"></script>
+    <script src="scripts/header.js"></script>
     <script src="scripts/dice-roller.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <!-- <link rel="stylesheet" href="styles/dice-roller.css"> -->
 </head>
 <body>
+    <header></header>
     <h1>Choose your dice:</h1>
     <label for="addDice">Add</label>
     <input type="radio" id="addDice" name="addSubtract" value="Add" checked>
@@ -41,3 +66,4 @@
     <div id="rollHistory"></div>
 </body>
 </html>
+
