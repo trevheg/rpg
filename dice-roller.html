@@ -18,10 +18,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
 
-    <!-- <script src="scripts/date.js" defer></script> -->
-    <script src="scripts/header.js"></script>
-    <!-- <script src="scripts/menu.js" defer></script> -->
-    <!-- <script type="module" src="scripts/character-creator.js"></script> -->
+    <script src="scripts/page-elements.js"></script>
     <script src="scripts/dice-roller.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,37 +30,40 @@
 </head>
 <body>
     <header></header>
-    <h1>Choose your dice:</h1>
-    <label for="addDice">Add</label>
-    <input type="radio" id="addDice" name="addSubtract" value="Add" checked>
-    <label for="subtractDice" >Subtract</label>
-    <input type="radio" id="subtractDice" name="addSubtract" value="Subtract">
-    <div id="dieButtons">
-        <button class="dieButton" id="d4" value="4">+ D4</button>
-        <button class="dieButton" id="d6" value="6">+ D6</button>
-        <button class="dieButton" id="d8" value="8">+ D8</button>
-        <button class="dieButton" id="d10" value="10">+ D10</button>
-        <button class="dieButton" id="d12" value="12">+ D12</button>
-        <button class="dieButton" id="d20" value="20">+ D20</button>
-        <button class="dieButton" id="d100" value="100">+ D100</button>
-    <p></p>
-        <button class="dieButton" id="md4" value="-4">- D4</button>
-        <button class="dieButton" id="md6" value="-6">- D6</button>
-        <button class="dieButton" id="md8" value="-8">- D8</button>
-        <button class="dieButton" id="md10" value="-10">- D10</button>
-        <button class="dieButton" id="md12" value="-12">- D12</button>
-        <button class="dieButton" id="md20" value="-20">- D20</button>
-        <button class="dieButton" id="md100" value="-100">- D100</button>
-    </div>
-    <h2 id="chosenDice"></h2>
-    
-    <label for="modifier" id="modifierLabel">Modifier:</label>
-    <input type="text" inputmode="numeric" pattern="[0-9]+" id="modifier" min="0" max="0" placeholder="0">
+    <main>
+        <h1>Choose your dice:</h1>
+        <label for="addDice">Add</label>
+        <input type="radio" id="addDice" name="addSubtract" value="Add" checked>
+        <label for="subtractDice" >Subtract</label>
+        <input type="radio" id="subtractDice" name="addSubtract" value="Subtract">
+        <div id="dieButtons">
+            <button class="dieButton" id="d4" value="4">+ D4</button>
+            <button class="dieButton" id="d6" value="6">+ D6</button>
+            <button class="dieButton" id="d8" value="8">+ D8</button>
+            <button class="dieButton" id="d10" value="10">+ D10</button>
+            <button class="dieButton" id="d12" value="12">+ D12</button>
+            <button class="dieButton" id="d20" value="20">+ D20</button>
+            <button class="dieButton" id="d100" value="100">+ D100</button>
+        <p></p>
+            <button class="dieButton" id="md4" value="-4">- D4</button>
+            <button class="dieButton" id="md6" value="-6">- D6</button>
+            <button class="dieButton" id="md8" value="-8">- D8</button>
+            <button class="dieButton" id="md10" value="-10">- D10</button>
+            <button class="dieButton" id="md12" value="-12">- D12</button>
+            <button class="dieButton" id="md20" value="-20">- D20</button>
+            <button class="dieButton" id="md100" value="-100">- D100</button>
+        </div>
+        <h2 id="chosenDice"></h2>
+        
+        <label for="modifier" id="modifierLabel">Modifier:</label>
+        <input type="text" inputmode="numeric" pattern="[0-9]+" id="modifier" min="0" max="0" placeholder="0">
 
-    <button id="roll">Roll!</button>
-    <h3 id="rolls"></h3>
-    <h2 id="result"></h2>
-    <div id="rollHistory"></div>
+        <button id="roll">Roll!</button>
+        <h3 id="rolls"></h3>
+        <h2 id="result"></h2>
+        <div id="rollHistory"></div>        
+    </main>
+    <footer></footer>
 </body>
 </html>
 

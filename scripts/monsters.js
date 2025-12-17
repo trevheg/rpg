@@ -1,5 +1,5 @@
 const monstersDiv = document.querySelector("#monsters");
-const url = "../finalproject/data/monsters.json";
+const url = "data/monsters.json";
 import { addThing } from "./modules.mjs";
 
 async function fetchData() {
