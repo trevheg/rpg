@@ -4,6 +4,8 @@ function loadHeader() {
         .then(data => {
             document.querySelector("header").innerHTML = data;
 
+
+            // toggles menu to open when button is clicked            
             const menuButton = document.querySelector("#menu-button");
             const aniNav = document.querySelector("nav")
             const navigation = document.querySelector("#nav-list");
@@ -15,6 +17,15 @@ function loadHeader() {
                     menuButton.classList.toggle("open");
                 })                
             }
+
+            // makes current page highlighted in links list
+            const links = navigation.querySelectorAll("a");
+            console.log(links);
+            links.forEach((link) => {
+                if (link.href === window.location.href){
+                    link.classList.add('current-page');
+                }
+            })
 
 
         })
